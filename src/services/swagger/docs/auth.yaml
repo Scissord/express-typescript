@@ -1,0 +1,40 @@
+# swagger/auth.yaml
+/api/auth/login:
+  post:
+    tags:
+      - Auth
+    summary: Возвращает приветственное сообщение
+    description: Возвращает простое приветственное сообщение
+    responses:
+      200:
+        description: Успешный ответ
+        content:
+          application/json:
+            example:
+              message: "Successfully login!"
+/api/auth/logout:
+  post:
+    tags:
+      - Auth
+    summary: Возвращает приветственное сообщение
+    description: Возвращает простое приветственное сообщение
+    responses:
+      200:
+        description: Успешный ответ
+        content:
+          application/json:
+            example:
+              message: "Successfully logout!"
+/api/auth/refresh:
+  post:
+    tags:
+      - Auth
+    summary: Возвращает приветственное сообщение
+    description: Возвращает простое приветственное сообщение
+    responses:
+      200:
+        description: Успешный ответ
+        content:
+          application/json:
+            example:
+              message: "Successfully refresh!"

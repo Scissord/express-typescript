@@ -1,0 +1,54 @@
+ /**
+ * @swagger
+ * /api/auth/logout:
+ *   post:
+ *     tags:
+ *       - Auth
+ *     summary: Возвращает приветственное сообщение
+ *     description: Возвращает простое приветственное сообщение
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json
+ *           schema:
+ *             $ref: '#/components/schemas/CreateUserInput'
+ *     responses:
+ *       200:
+ *         description: Успешный ответ
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/CreateUserInput'
+ *             example:
+ *               message: "Successfully logout!"
+ *       400:
+ *         description: Bad request
+ */
+
+/**
+ * @swagger / @openapi
+ * components:
+ *   schemas:
+ *     CreateUserInput:
+ *       type: object
+ *       required:
+ *         - email
+ *         - name
+ *         - password
+ *         - passwordConfirmation
+ *       properties:
+ *         email:
+ *           type: string
+ *           default: john.doe@example.com
+ *         name:
+ *           type: string
+ *           default: kazakh
+ *         password:
+ *           type: string
+ *           default: 123456#Ss
+ *         passwordConfirmation:
+ *           type: string
+ *           default: 123456#Ss
+ *
+ *     CreateUserInput:
+ */

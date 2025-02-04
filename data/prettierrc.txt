@@ -1,0 +1,22 @@
+const prettierrc = {
+  // use ; in the end of line
+  semi: true,
+  // use '' for code
+  singleQuote: true,
+  // use '' for jsx
+  jsxSingleQuote: false,
+  // {data} => { data }
+  bracketSpacing: true,
+  // don't make extra , - like 1, 2, 3,
+  trailingComma: 'none',
+  // max length = 100
+  printWidth: 100,
+  // max tab
+  tabWidth: 2,
+  // 1 parameter => {}
+  arrowParens: 'avoid',
+  // \n (LF) вместо \r\n (CRLF)
+  endOfLine: 'lf',
+  // spaces instead of tabulation
+  useTabs: false
+};

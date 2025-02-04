@@ -1,0 +1,10 @@
+1) npx prisma migrate dev --name user
+create migration and push it
+
+2) npx prisma migrate reset
+delete all migrations
+
+3) if you need to change current migrations, just change in code and do step 1
+
+4) npx prisma db push
+push without migrations

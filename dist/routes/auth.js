@@ -45,4 +45,3 @@ router.post('/login', (0, validate_1.default)(login_1.default), AuthController.l
 router.post('/logout', AuthController.logout);
 router.post('/refresh', AuthController.refresh);
 exports.default = router;
-//# sourceMappingURL=auth.js.map

@@ -44,4 +44,3 @@ router.use('/user', user_1.default);
 router.use('/auth', auth_1.default);
 router.use('/uploads', express_1.default.static('uploads'));
 exports.default = router;
-//# sourceMappingURL=index.js.map

@@ -1,7 +1,16 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.refresh = exports.logout = exports.login = void 0;
-const login = async (req, res) => {
+const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // let { login, password, entity } = req.body;
     // 1. validation
     // const result = await validateAuth(login, password, entity);
@@ -55,15 +64,15 @@ const login = async (req, res) => {
     // await Log.create({
     // });
     // res.status(200).send({ message: "ok", user, accessToken });
-};
+});
 exports.login = login;
-const logout = async (req, res) => {
+const logout = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // res.cookie('refreshToken', '', { maxAge: 0 });
     // console.log('logout successfully');
     // res.status(200).send({ message: 'ok' });
-};
+});
 exports.logout = logout;
-const refresh = async (req, res) => {
+const refresh = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // try {
     //   // 1. check for refreshToken
     //   const refreshToken = req.cookies.refreshToken;
@@ -124,6 +133,5 @@ const refresh = async (req, res) => {
     //   console.log('Error in refresh auth controller', err.message);
     //   res.status(500).send({ error: 'Internal Server Error' });
     // }
-};
+});
 exports.refresh = refresh;
-//# sourceMappingURL=auth.js.map

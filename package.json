@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "tsx --watch src/server.ts",
-    "start": "node dist/server.js",
-    "build": "tsc --build",
+    "dev": "ts-node-dev -r tsconfig-paths/register --env-file .env src/server.ts",
+    "start": "ts-node dist/server.js",
+    "build": "npx tsc",
     "test": "jest",
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
@@ -28,6 +28,7 @@
     "helmet": "^8.0.0",
     "lodash": "^4.17.21",
     "swagger-ui-express": "^5.0.1",
+    "tsconfig-paths": "^4.2.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
@@ -47,7 +48,7 @@
     "prisma": "^6.3.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
+    "ts-node-dev": "^2.0.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }

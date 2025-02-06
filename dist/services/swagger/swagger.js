@@ -46,10 +46,7 @@ const loadSwaggerFiles = () => {
     });
     return swaggerDocs;
 };
-const swaggerSpec = {
-    ...baseSwaggerConfig,
-    paths: loadSwaggerFiles()
-};
+const swaggerSpec = Object.assign(Object.assign({}, baseSwaggerConfig), { paths: loadSwaggerFiles() });
 const setupSwagger = (app, port) => {
     app.use('/docs', swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swaggerSpec));
     app.get('/docs.json', (req, res) => {
@@ -58,4 +55,3 @@ const setupSwagger = (app, port) => {
     });
 };
 exports.default = setupSwagger;
-//# sourceMappingURL=swagger.js.map

@@ -46,4 +46,3 @@ router.get('', AuthController.get);
 router.patch('/:id', AuthController.update);
 router.delete('/:id', AuthController.softDelete);
 exports.default = router;
-//# sourceMappingURL=user.js.map

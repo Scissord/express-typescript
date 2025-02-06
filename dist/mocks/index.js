@@ -5,4 +5,3 @@ exports.mockRequest = {};
 exports.mockResponse = {
 // send:
 };
-//# sourceMappingURL=index.js.map
